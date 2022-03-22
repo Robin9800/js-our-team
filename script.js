@@ -70,17 +70,17 @@ function creazioneTitan(titan) {
     // al contenitore Card appendo l'elemento div testo creato 
     containerCard.appendChild(containerText);
     // creo un nuovo elemento che sarà il nome della carta 
-
+    const titanName = document.createElement('h3');
     // appendo l'elemendo creato al contenitore testo 
- 
-    // all'elemento nomePersonaggio vado ad inserire il nome dell'oggetto 
-
-    // creo un nuovo elemento che sarà il ruolo della carta 
-
+    containerText.appendChild(titanName);
+    // all'elemento titanName vado ad inserire il nome (nameMember) dell'oggetto 
+    titanName.innerText = titan.nameMember;
+    // creo un nuovo elemento che sarà lo shifter della carta 
+    const shifter = document.createElement('p');
     // appendo l'elemendo creato al contenitore testo
-  
-    // all'elemento ruoloPersonaggio vado ad inserire il ruolo dell'oggetto 
-
+    containerText.appendChild(shifter);
+    // all'elemento shifter vado ad inserire lo shifter dell'oggetto 
+    shifter.innerText = titan.shifter;
 
 }
 
